@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>세연이와 인엽이의 결혼 청첩장</title>
+    <style>
+        * {
+            font-family: 'IBM Plex Sans KR', sans-serif;
+        }
+        body, h1, h2, h3, p, a {
+            font-size: 16px;
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+            font-weight: normal;
+        }
+        .wrap>h1{
+            background-color: pink;
+            color: white;
+            height: 30px;
+            padding: 15px 0px 10px 20px;
+            font-weight: 500;
+        }
+        .wrap {
+            width: 350px;
+            margin: auto;
+        }
+        .pic{
+            /*이미지 가운데로 텍스트 나열을 위함*/
+            display: flex;
+            flex-direction: column;/*행으로 나열*/
+            justify-content: center;
+            align-items: center;
+            margin: 30px auto 30px auto;
+            color: pink;
+            letter-spacing:3px;
+        }
+        .pic>img{
+            width: 250px;
+            height: 200px;
+            margin: 15px auto 15px auto;
+            border: 3px solid pink;
+        }
+    </style>
+
+    <!--name-->
+    <style>
+        .name>h1 {
+            margin: auto;   
+            text-align: center;
+            color: pink;
+            font-size: 22px;
+            font-weight: 500;
+        }
+        .name>hr{
+            margin-top: 0;
+            margin-bottom: 0px;
+            width: 180px;
+            border-top: none;
+            border-bottom: 1px solid pink;
+        }
+        .name {
+            margin-bottom: 30px;
+        }
+    </style>
+
+    <!--main-->
+    <style>
+        .main{
+            background-color: pink;
+            color: white;
+            /*이미지 가운데로 텍스트 나열을 위함*/
+            display: flex;
+            flex-direction: column;/*행으로 나열*/
+            justify-content: center;
+            align-items: center;
+        }
+        .main>p{
+            margin-left: -50px;
+            line-height: 2;
+            margin-bottom: 20px;
+        }
+        
+        .main>span{
+           line-height:0;
+           margin-bottom: 20px;
+           margin-top: 20px;
+        }
+        
+        .main>span:first-child{
+            font-size: 20px;
+            margin-top: 35px;
+            margin-bottom: 40px;
+        }
+        .main>span:last-child{
+            margin-top: 2px;
+            margin-bottom: 30px;
+        }
+        
+    </style>
+
+    <style>
+        .bottom{
+            /*이미지 가운데로 텍스트 나열을 위함*/
+            display: flex;
+            flex-direction: column;/*행으로 나열*/
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            color: pink;
+        }
+        .bottom>p {
+            font-weight: 500;
+        }
+        .bottom>input{
+            width: 250px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .bottom>button{
+            width: 150px;
+            height: 40px;
+            border-radius: 8px;
+            border: none;
+            background-color: pink;
+            color: white;
+            margin-bottom: 30px;
+            margin-top: -10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>세연이와 인엽이의 첫 시작을 축하해주세요</h1>
+        <div class="pic">
+            <p>Save The Date</p>
+            <img src="love.jpg">
+            <p>07.15.FRIDAY.PM.12:30</p>
+        </div>
+        <div class="name">
+            <hr/>
+            <h1>박세연 & 황인엽</h1>
+            <hr/>
+        </div>
+        <div class="main">
+            <span>INVITATION</span>
+            <p>서로 다른 두 사람이 만나<br/>
+            사랑으로 하나 되는 자리에<br/>
+            소중한 여러분들을 초대합니다.<br/>
+            기쁠 때나, 슬플 때나<br/>
+            서로를 사랑으로 품으며<br/>
+            행복의 계단을 쌓아가겠습니다.<br/>
+            저희의 첫 시작을 함께 해주신다면<br/>
+            감사한 마음 깊이 간직하며 잘 살겠습니다.</p>
+            <span>2022. 07. 15. FRI. PM 12:30</span>
+            <span>스파르타웨딩 르탄홀</span>
+        </div>
+        <div class="bottom">
+            <p>축하메시지를 남겨주세요</p>
+            <input placeholder="이름" type="text">
+            <textarea placeholder="메시지를 남겨주세요" cols="35" rows="5"></textarea><br/>
+            <button>메시지 남기기</button>
+        </div>
+    </div>
+</body>
+</html>
+
